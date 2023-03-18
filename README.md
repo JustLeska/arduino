@@ -1,2 +1,2 @@
 # arduino
-[STOPPED UPDATING] Arduino scripts that I made
+[LOW UPDATING] Arduino scripts that I made
