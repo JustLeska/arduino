@@ -1,10 +1,12 @@
 #include <Wire.h> // Librairy
 #include <LiquidCrystal_I2C.h> // Librairy (Install here: https://github.com/fmalpartida/New-LiquidCrystal)
 
-LiquidCrystal_I2C lcd(0x27, 2, 1, 0, 4, 5, 6, 7, 3, POSITIVE); // Setting up the LCD
+LiquidCrystal_I2C lcd(0x27,16,2); // Setting up the LCD
 
 void setup() {
   Serial.begin(9600); // Setting up the Serial Monitor
+  lcd.init(); // Initialize the LCD
+  lcd.backlight(); // Tuen backlights on
   Serial.println("Setting up LCD, please wait...");
   lcd.begin(16,2); // Starts the LCD program
   lcd.clear(); // Clears the LCD
