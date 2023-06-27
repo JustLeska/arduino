@@ -1,2 +1,2 @@
 # arduino
-[LOW UPDATING] Arduino scripts that I made
+[LOW UPDATING RATE] Arduino scripts that I made
