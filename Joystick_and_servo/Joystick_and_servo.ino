@@ -1,7 +1,7 @@
 
 #include <Servo.h>
 
-Servo myservo;
+Servo moteur;
 
 const int X = 0;
 const int Y = 1;
@@ -45,7 +45,7 @@ void Smoother(int x_pin, int y_pin)
 void setup() {
 
   Serial.begin(9600);
-  myservo.attach(9);
+  moteur.attach(9);
   for (int i = 0; i < MaxReadings; i++) {
     Xreadings[i] = 0;
     Yreadings[i] = 0;
@@ -55,7 +55,7 @@ void setup() {
 void loop() {
   Smoother(X, Y);
   Servo_Pos = map(X_Pos, 0, 1023, 0, 180);
-  myservo.write(Servo_Pos);
+  moteur.write(Servo_Pos);
   Serial.println(Servo_Pos);
   delay(20);
 }
