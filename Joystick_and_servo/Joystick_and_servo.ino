@@ -57,6 +57,6 @@ void loop() {
   Servo_Pos = map(X_Pos, 0, 1023, 0, 180);
   moteur.write(Servo_Pos);
   Serial.println(Servo_Pos);
-  delay(20);
+  delay(15);
 }
 
