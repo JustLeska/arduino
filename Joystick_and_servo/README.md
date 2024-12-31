@@ -2,7 +2,7 @@
 
 Use a generic Joystick to control a Adruino Servo!
 
-**Librairy:**
+**Library:**
 N/A
 
 **Cabling:**
