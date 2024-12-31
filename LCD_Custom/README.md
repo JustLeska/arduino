@@ -2,7 +2,7 @@
 
 Tell what you want to show on your Arduino in the Serial Monitor and it will show on the LCD!
 
-**Librairy:**
+**Library:**
 * [NewLiquidCrystal](https://github.com/fmalpartida/New-LiquidCrystal)
 
 **Cabling:**
